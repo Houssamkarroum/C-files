@@ -1,5 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+// add function to create files
+void createFile(char* filename) {
+    FILE* file = fopen(filename, "w");
+    fclose(file);
+}
+
 
 // Fonction pour afficher le contenu d'un fichier
 void displayFile(char* filename) {
